@@ -45,7 +45,7 @@ strong {
     line-height: var(--cell-size);
     white-space: nowrap;
     flex-grow: 1;
-    /*border-bottom: 1px solid var(--color-one);*/
+    border-bottom: 1px solid var(--color-one);
     border-right: 1px solid var(--color-one);
 }
 
@@ -62,7 +62,7 @@ header.cell {
 }
 
 .row:last-child .cell {
-    border-bottom: 0;
+    border-bottom: none;
 }
 
 .row .cell:last-child {
