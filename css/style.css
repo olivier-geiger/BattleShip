@@ -126,7 +126,7 @@ body.terminal {
 body.docstring {
     background-color: #384c74;
     color: #fff;
-    --color-one: #1e1e2d;
+    --color-one: #28a745;
     --color-two: #37bdbb;
     --color-hit: #28a745;
     --color-splash: #df4759;
