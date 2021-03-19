@@ -87,6 +87,13 @@ let app = {
             app.score = app.score - (gameDuration * 1000);
 
             // On affiche le score
+            Swal.fire({
+                title: 'Error!',
+                text: 'Do you want to continue',
+                icon: 'error',
+                confirmButtonText: 'Cool'
+              })
+              
             alert("Vous avez gagné, cliquez sur OK pour voir votre score !")
             alert("Votre score est de " + app.score);
 
