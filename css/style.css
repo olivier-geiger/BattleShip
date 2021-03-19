@@ -62,7 +62,7 @@ header.cell {
 }
 
 .row:last-child .cell {
-    border-bottom: 0;
+    border-bottom: none;
 }
 
 .row .cell:last-child {
