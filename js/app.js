@@ -87,9 +87,8 @@ let app = {
             app.score = app.score - (gameDuration * 1000);
 
             // On affiche le score
-            //alert("Vous avez gagné, cliquez sur OK pour voir votre score !")
-            app.win();
-            //alert("Votre score est de " + app.score);
+            alert("Vous avez gagné, cliquez sur OK pour voir votre score !")
+            alert("Votre score est de " + app.score);
 
             // On demande le username au gagnant
             let username = prompt("Champion, comment tu t'appelles ?");
@@ -98,10 +97,6 @@ let app = {
             localStorage.setItem('userScore', username + ' : ' + app.score);
 
         }
-    },
-    
-    win: function () {
-        Swal.fire('Vous avez gagné')
     },
 
     message: function (r, c, hit = false) {
