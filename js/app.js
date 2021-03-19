@@ -87,6 +87,7 @@ let app = {
             app.score = app.score - (gameDuration * 1000);
 
             // On affiche le score
+            alert("Vous avez gagné, cliquez sur OK pour voir votre score !")
             alert("Votre score est de " + app.score);
 
             // On demande le username au gagnant
