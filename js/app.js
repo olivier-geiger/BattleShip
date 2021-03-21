@@ -24,6 +24,7 @@ let app = {
         document.querySelector("#stats").addEventListener('click', app.showStats);
         document.querySelector("#toggle-actions").addEventListener("click", app.toggleActionsList);
         document.querySelector("#show-scores").addEventListener("click", app.handleShowScores);
+        document.querySelector("#begin").addEventListener("click", app.begin);
 
         // On exécute des fonctions qui initialisent le jeu
         app.displayGrid();
@@ -42,6 +43,10 @@ let app = {
         //     on va pouvoir le comparer avec un autre Date.now() en fin de partie
         app.startTime = Date.now();
     },
+    begin: function() {
+        app.init();
+    },
+
     cellClick: function (event) {
         // Si la partie est déjà terminée, on stoppe son exécution !
         if (app.isOver()) {
